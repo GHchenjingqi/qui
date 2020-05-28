@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>input——Qui</title>
+		<link rel="stylesheet" type="text/css" href="../css/ui.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/ui-layout.css"/>
+		<script src="../base/jquery/jquery-1.83.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/ui-svg.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			pre{margin-top: 35px;}
+		</style>
+	</head>
+	<body>
+		<header class="bgff border-bottom plr20">
+			<h1 class="logo left"><a href="/"><img src="../img/logo.png" alt="Qui-logo"/><span>Q-Ui</span></a></h1>
+		</header>
+		<aside >
+			<section class="ui-cton height100 bgff">
+				<div class="container">
+					<div class="row">
+						<div class="pc">
+							<div class="col-md-24 mtb20" id="top-header">
+							<h1 class="f20 cor33" id="input-input">input输入框</h1>
+						</div>
+						<div class="col-md-24">
+							<div class="row">
+								<div class="col-md-8 col-xs-24 mb20">
+									<input type="text" class="ui-input" placeholder="默认输入框" />
+								</div>
+								<div class="col-md-8 col-xs-24 mb20">
+									<input type="text" class="ui-input border-input" placeholder="圆角输入框" />
+								</div>
+								<div class="col-md-8 col-xs-24 mb20">
+									<input type="number" class="ui-input border-input" placeholder="数字输入框" />
+								</div>
+								<div class="col-md-8 col-xs-24 mb20">
+									<input type="date" class="ui-input border-input" value="2020-04-01" placeholder="日期输入框" />
+								</div>
+								<div class="col-md-8 col-xs-24 mb20">
+									<input type="email" class="ui-input border-input" placeholder="邮箱输入框" />
+								</div>
+								<div class="col-md-8 col-xs-24 mb20">
+									<input type="tel" class="ui-input border-input" maxlength="11" placeholder="电话输入框" />
+								</div>
+								<div class="col-md-8 col-xs-24 mb20">
+									<input type="search" class="ui-input border-input" placeholder="搜索输入框" />
+								</div>
+							</div> 
+						</div>	
+						<div class="col-md-24">
+							<pre>&lt;input type="text" class="ui-input" placeholder="默认输入框" /&gt;
+&lt;input type="text" class="ui-input border-input" placeholder="圆角输入框" /&gt;
+&lt;input type="number" class="ui-input border-input" placeholder="数字输入框" /&gt;
+&lt;input type="date" class="ui-input border-input" value="2020-04-01" placeholder="日期输入框" /&gt;
+&lt;input type="email" class="ui-input border-input" placeholder="邮箱输入框" /&gt;
+&lt;input type="tel" class="ui-input border-input" maxlength="11" placeholder="电话输入框" /&gt;
+&lt;input type="search" class="ui-input border-input" placeholder="搜索输入框" /&gt;</pre>
+						</div>	
+						<div class="col-md-24">
+							<h1 class="f20 cor33" id="input-textarea">textarea文本域</h1>
+						</div>
+						<div class="col-md-24">	
+							<div class="row">
+								<div class="col-md-8 col-xs-24">
+									<textarea name="text" class="ui-textarea" >文本域</textarea>
+								</div>
+								<div class="col-md-8 col-xs-24">
+									<textarea name="text" class="ui-textarea" readonly>只读</textarea>
+								</div>
+								<div class="col-md-8 col-xs-24">
+									<textarea name="text" class="ui-textarea-x">可横向拉伸</textarea>
+								</div>
+								<div class="col-md-8 col-xs-24">
+									<textarea name="text" class="ui-textarea-y">仅纵向拉伸</textarea>
+								</div>
+								<div class="col-md-8 col-xs-24">
+									<textarea name="text" class="ui-textarea-auto">任意拉伸</textarea>
+								</div>
+								<div class="col-md-8 col-xs-24">
+									<div class="ui-text-box pr">
+											<textarea name="text" class="ui-textarea-num ui-txt" maxlength="200" rows="3"></textarea>
+											<div class="ui-text-border"></div>
+											<span class="ui-textarea-txt"><b class="ui-textarea-nums">0</b>/200字</span>
+									</div>
+								</div>
+							</div> 
+						</div>
+						<div class="col-md-24">
+								<pre>&lt;textarea name="text" class="ui-textarea" &gt;文本域&lt;/textarea&gt;
+	&lt;textarea name="text" class="ui-textarea" readonly&gt;只读&lt;/textarea&gt;
+	&lt;textarea name="text" class="ui-textarea-x"&gt;可横向拉伸&lt;/textarea&gt;
+	&lt;textarea name="text" class="ui-textarea-y"&gt;仅纵向拉伸&lt;/textarea&gt;
+	&lt;textarea name="text" class="ui-textarea-auto"&gt;任意拉伸&lt;/textarea&gt;
+	
+	&lt;div class="ui-text-box pr"&gt;
+	&lt;textarea name="text" class="ui-textarea-num ui-txt" maxlength="200" rows="3"&gt;&lt;/textarea&gt;
+	&lt;div class="ui-text-border"&gt;&lt;/div&gt;
+	&lt;span class="ui-textarea-txt"&gt;&lt;b class="ui-textarea-nums"&gt;0&lt;/b&gt;/200字&lt;/span&gt;
+	&lt;/div&gt;</pre>
+						</div>
+		                <div class="col-md-24">
+							<h1 class="f20 cor33" id="input-select">select下拉</h1>
+						</div>
+						<div class="col-md-24">
+							<div class="row">
+								<div class="col-md-8 col-xs-24">
+									<select name="">
+										<option value="水果">水果</option>
+										<option value="番茄">番茄</option>
+										<option value="西红寺">西红寺</option>
+										<option value="圣女果">圣女果</option>
+										<option value="草莓">草莓</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-24">
+<pre>&lt;select name=""&gt;
+&lt;option value="水果"&gt;水果&lt;/option&gt;
+&lt;option value="番茄"&gt;番茄&lt;/option&gt;
+&lt;option value="西红寺"&gt;西红寺&lt;/option&gt;
+&lt;option value="圣女果"&gt;圣女果&lt;/option&gt;
+&lt;option value="草莓"&gt;草莓&lt;/option&gt;
+&lt;/select&gt;</pre>
+						</div>	
+						
+						<div class="col-md-24">
+							<h1 class="f20 cor33" id="input-radio">radio单选</h1>
+						</div>
+						<div class="col-md-24">
+							<div class="box">
+								<div class="radio left">
+									<input type="radio" class="radio-input"  name="radio" id="radio"  />
+									<label for="radio" class="radio-label radioed" id="radio-lable"></label>
+									<span class="radio-txt">男</span>
+								</div>
+								<div class="radio left">
+									<input type="radio"  class="radio-input"  name="radio" id="radio1"  />
+									<label for="radio" class="radio-label radioed"></label>
+									<span class="radio-txt">女</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-24">
+<pre>&lt;div class="radio left"&gt;
+&lt;input type="radio" class="radio-input" name="radio" id="radio"  /&gt;
+&lt;label for="radio" class="radio-label radioed" id="radio-lable"&gt;&lt;/label&gt;
+&lt;span class="radio-txt"&gt;男&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="radio left"&gt;
+&lt;input type="radio"  class="radio-input"  name="radio" id="radio1"  /&gt;
+&lt;label for="radio" class="radio-label radioed"&gt;&lt;/label&gt;
+&lt;span class="radio-txt"&gt;女&lt;/span&gt;
+&lt;/div&gt;</pre>
+						</div>	
+						
+						<div class="col-md-24">
+							<h1 class="f20 cor33" id="input-checkbox">checkbox选择框</h1>
+						</div>
+						<div class="col-md-24">
+							<div class="checkbox">
+								<input type="checkbox" class="check-input" name="pleased" id="pleased" />
+								<label for="pleased" class="check-label" id="pleased-label"></label>
+							</div>
+							<span>非常满意</span>
+						</div>
+						<div class="col-md-24">
+<pre>&lt;div class="checkbox"&gt;
+&lt;input type="checkbox" class="check-input" name="pleased" id="pleased" /&gt;
+&lt;label for="pleased" class="check-label" id="pleased-label"&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;span&gt;非常满意&lt;/span&gt;</pre>
+						</div>	
+						<div class="col-md-24">
+							<h1 class="f20 cor33" id="input-switch">switch开关</h1>
+						</div>
+						<div class="col-md-24">
+							<div class="row">
+								<div class="col-md-4 col-xs-24 mb20">
+									<div class="switch-container">
+							            <input id="switch" type="checkbox" class="switch" />
+							            <label  for="switch" class="switch-label"></label>
+							     	</div>
+								</div>
+								<div class="col-md-4 col-xs-24 mb20">
+									 <div class="switch-container">
+								            <input id="switchFlag" type="checkbox" class="switch" />
+								            <label for="switchFlag" class="switch-label switchFlag"></label>
+								     </div>
+								</div>
+								<div class="col-md-4 col-xs-24 mb20">
+									<div class="switch-container">
+							            <input id="switchSex" type="checkbox" class="switch" />
+							            <label for="switchSex" class="switch-label switchSex"></label>
+							    	 </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-24">
+<pre>&lt;div class="switch-container"&gt;
+&lt;input id="switch" type="checkbox" class="switch" /&gt;
+&lt;label  for="switch" class="switch-label"&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="switch-container"&gt;
+&lt;input id="switchFlag" type="checkbox" class="switch" /&gt;
+&lt;label for="switchFlag" class="switch-label switchFlag"&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="switch-container"&gt;
+&lt;input id="switchSex" type="checkbox" class="switch" /&gt;
+&lt;label for="switchSex" class="switch-label switchSex"&gt;&lt;/label&gt;
+&lt;/div&gt;</pre>
+						</div>
+						
+						<div class="col-md-24">
+							<h1 class="f20 cor33" id="input-progress">progress进度条</h1>
+						</div>
+						<div class="col-md-24">
+							<div class="row">
+								<div class="col-md-8 col-xs-24">
+									<progress class="progress" value="40" max="100"></progress>
+								</div>
+								<div class="col-md-8 col-xs-24">
+									<progress class="progress progress-radius" id="pro-radius" value="60" max="100"></progress>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-24">
+<pre>&lt;progress class="progress" value="40" max="100"&gt;&lt;/progress&gt;
+&lt;progress class="progress progress-radius" id="pro-radius" value="60" max="100"&gt;&lt;/progress&gt;</pre>
+						</div>
+						<div class="waphidden">
+							<div class="col-md-24">
+							<h1 class="f20 cor33" id="input-table">table</h1>
+						</div>
+						<div class="col-md-24">
+							<table class="ui-table">
+								<tr><th width="5%">
+									<div class="checkbox">
+										<input type="checkbox" class="check-input" name="all" id="all-check"  />
+									    <label for="all" class="check-label" id="all-label"></label>
+									</div>
+								    </th>
+									<th>文章标题</th><th width="15%">时间 </th><th width="15%">阅读</th></tr>
+								<tr>
+									<td>
+										<div class="checkbox">
+											<input type="checkbox" class="check-input" name="arclist" id="arclist0"  />
+										    <label for="arclist" class="check-label" id="arclist-label0"></label>
+										</div>
+									</td>
+									<td>离夏天还差一个冬天</td>
+									<td>2015-03-15</td>
+									<td>50</td> 
+								</tr>
+								<tr>
+									<td>
+										<div class="checkbox">
+											<input type="checkbox" class="check-input" name="arclist" id="arclist1"  />
+										    <label for="arclist" class="check-label" id="arclist-label1"></label>
+										</div>
+									</td>
+									<td>一个傻子</td>
+									<td>2015-11-15</td>
+									<td>599</td>
+								</tr>
+							</table>
+						</div>
+						<div class="col-md-24">
+<pre>&lt;table class="ui-table"&gt;
+&lt;tr&gt;&lt;th width="5%"&gt;
+&lt;div class="checkbox"&gt;
+&lt;input type="checkbox" class="check-input" name="all" id="all-check"  /&gt;
+&lt;label for="all" class="check-label" id="all-label"&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;/th&gt;
+&lt;th&gt;文章标题&lt;/th&gt;&lt;th width="15%"&gt;时间 &lt;/th&gt;&lt;th width="15%"&gt;阅读&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;div class="checkbox"&gt;
+&lt;input type="checkbox" class="check-input" name="arclist" id="arclist0"  /&gt;
+&lt;label for="arclist" class="check-label" id="arclist-label0"&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;离夏天还差一个冬天&lt;/td&gt;
+&lt;td&gt;2015-03-15&lt;/td&gt;
+&lt;td&gt;50&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;div class="checkbox"&gt;
+&lt;input type="checkbox" class="check-input" name="arclist" id="arclist1"  /&gt;
+&lt;label for="arclist" class="check-label" id="arclist-label1"&gt;&lt;/label&gt;
+&lt;/div&gt;
+&lt;/td&gt;
+&lt;td&gt;一个傻子&lt;/td&gt;
+&lt;td&gt;2015-11-15&lt;/td&gt;
+&lt;td&gt;599&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+							</div>
+						</div>
+						
+						
+						<div class="footer-height"><!--底部高度--></div>
+						</div>
+						<div class="wap">
+							<div class="wapbox">
+							    <iframe src="input.html" width="100%" height="100%"></iframe>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			
+			<section class="w300 left height100 bgee ptb20">
+				    <ul class="left-classA">
+						<h4><a href="fontsize.html">字体大小</a></h4> 
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="image.html">图片</a></h4>
+						<li><a href="image.html#img-z">正方形图片</a></li>
+						<li><a href="image.html#img-r">圆形图片</a></li>
+						<li><a href="image.html#img-auto">宽高自动图片</a></li>
+						<li><a href="image.html#img-col">创意图片排列</a></li>
+					</ul>
+				    <ul class="left-classA">
+						<h4><a href="button.html">按钮</a></h4>
+						<li><a href="button.html#button-button">button按钮</a></li>
+						<li><a href="button.html#button-a">a按钮</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="color.html">颜色</a></h4>
+						<li><a href="color.html#color-text">字体颜色Class命名</a></li>
+						<li><a href="color.html#color-bg">背景颜色Class命名</a></li>
+						<li><a href="color.html#color-bd">边框颜色Class命名</a></li>
+					</ul>
+					<ul class="left-classA isopen">
+						<h4><a href="input.html">表单输入</a></h4>
+						<li><a href="input.html#input-input">input</a></li>
+						<li><a href="input.html#input-textarea">textarea</a></li>
+						<li><a href="input.html#input-select">select</a></li>
+						<li><a href="input.html#input-radio">radio</a></li>
+						<li><a href="input.html#input-checkbox">checkbox</a></li>
+						<li><a href="input.html#input-radio">radio</a></li>
+						<li><a href="input.html#input-checkbox">switch</a></li>
+						<li><a href="input.html#input-progress">progress</a></li>
+						<li><a href="input.html#input-table">table</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="layout.html">布局</a></h4>
+						<li><a href="layout.html#layout-24">24栅格</a></li>
+						<li><a href="layout.html#layout-10">横向等分</a></li>
+						<li><a href="layout.html#layout-width">无间距分割</a></li>
+						<li><a href="layout.html#layout-flex">flex弹性布局</a></li>
+					</ul>
+					
+	                 <ul class="left-classA">
+						<h4><a href="css3-animate.html">CSS3动画</a></h4>
+						<li><a href="css3-animate.html#css3-1">class动画</a></li>
+						<li><a href="css3-animate.html#css3-2">点击动画</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="feather.html">feather图标</a></h4>
+						<li><a href="feather.html#feather-icon">全部图标</a></li>
+						<li><a href="feather.html#feather-user">使用方式</a></li>
+					</ul> 
+					<ul class="left-classA">
+						<h4><a href="dialog.html">对话框/弹框</a></h4>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="swiper.html">轮播插件</a></h4>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="px-rem.html">工具</a></h4>
+						<li><a href="px-rem.html">单位转换：PX-REM</a></li>
+						<li><a href="base64.html">图片转base64</a></li>
+						<li><a href="qrcode.html">二维码生成</a></li>
+					</ul>
+			</section>
+		</aside>	
+	<article >
+	    	<a class="go-top animated slideInDown" href="#top-header"> 
+	    		<img src="../base/icons/arrow-up.svg" class="go-top-icon" onload="SVGInject(this)" />
+	    	</a>
+	</article>
+	<script src="../js/ui.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		Check("pleased","pleased-label");
+		for(var i =0;i<$(".ui-table .check-input").length-1;i++){
+			Check("arclist"+i,"arclist-label"+i);
+		}
+		
+        Check("all-check","all-label");
+	</script>
+	</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>image图片——Qui</title>
+		<link rel="stylesheet" type="text/css" href="../css/ui.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/ui-layout.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/ui/image.css"/>
+		<script src="../js/ui-svg.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+     </head>
+	<body>
+		<header class="bgff border-bottom plr20">
+			<h1 class="logo left"><a href="/"><img src="../img/logo.png" alt="Qui-logo"/><span>Q-Ui</span></a></h1>
+		</header>
+		<aside >
+			<section class="ui-cton height100 bgff p20">
+				 <div class="container">
+					<div class="row">
+						<div class="pc">
+							<div class="col-md-24 mtb20" id="top-header">
+								<h1 class="f20 cor333 mtb30" id="img-z">
+									正方形图片
+								</h1>
+								<p class="f16 cor33">Qui默认设置宽高为100px的盒子，class:ui-z-100，开发者可以根据需要扩展</p>
+							</div>
+							<div class="col-md-24 box"> 
+									<div class="ui-z-100">
+										<img src="../img/z.png" alt=""/>
+									</div>
+									<p>宽高100px图片</p> 
+							</div>	
+							<div class="col-md-24 mt20">
+	                            <pre>
+	&lt;div class="ui-z-100"&gt;
+	&lt;img src="../img/z.png" alt=""/&gt;
+	&lt;/div&gt;</pre>
+	                        </div>  
+	                        <div class="col-md-24 mtb20" id="top-header">
+								<h1 class="f20 cor333 mtb30" id="img-r">
+									圆形图片
+								</h1>
+								<p class="f16 cor33">圆角直接写在img上面，父级容易出现不完美，IE8以下不兼容圆角。Qui默认设置的圆角有：</p>
+							</div>
+							<div class="col-md-24">
+								<div class="row">
+									<div class="col-xs-12 col-md-4">
+										<div class="ui-z-100 ">
+											<img src="../img/z.png" class="bdr6" alt=""/>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-4">
+										<div class="ui-z-100 ">
+											<img src="../img/z.png" class="bdr12" alt=""/>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-4">
+										<div class="ui-z-100 ">
+											<img src="../img/z.png" class="bdr25" alt=""/>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-4">
+										<div class="ui-z-100 ">
+											<img src="../img/z.png" class="bdr30" alt=""/>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-4">
+										<div class="ui-z-100 ">
+											<img src="../img/z.png" class="bdr50" alt=""/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-24 mtb20" id="top-header">
+		<p class="f16 cor33">Qui默认设置的圆角有：</p>
+	</div>
+	<div class="col-md-24 mt20">
+	<pre>.bdr3 {border-radius: 3px;}
+	.bdr6 {border-radius: 6px;}
+	.bdr12 {border-radius: 12px;}
+	.bdr25 {border-radius: 25px;}
+	.bdr30 {border-radius: 30px;}
+	.bdr40 {border-radius: 40px;}
+	.bdr50 {border-radius: 50%;}
+	/*移动端*/
+	.bdr-w-1 {border-radius: 1vw;}
+	.bdr-w-2 {border-radius: 2vw;}
+	.bdr-w-3 {border-radius: 3vw;}  </pre>
+	                        </div> 
+							<div class="col-md-24 mt20">
+	                            <pre>
+	&lt;div class="ui-z-100 "&gt;
+	&lt;img src="../img/z.png" class="bdr50" alt=""/&gt;
+	&lt;/div&gt; </pre></div>  
+	
+							<div class="col-md-24 mtb20" id="top-header">
+								<h1 class="f20 cor333 mtb30" id="img-auto">
+									object-fit:控制图片
+								</h1>
+							</div>
+							<div class="col-md-24 box">		
+								<div class="box1">
+									<img class="img-fill" src="../img/01.jpg" alt=""/>
+									<span class="f14 corff">img-fill:object-fit: fill;</span>
+								</div>
+								
+								<div class="box1">
+									<img  class="img-contain" src="../img/01.jpg" alt=""/>
+									<span class="f14 corff">img-contain:object-fit: contain;</span>
+								</div>
+								
+								<div class="box1">
+									<img  class="img-cover" src="../img/01.jpg" alt=""/>
+									<span class="f14 corff">img-cover:object-fit: cover;</span>
+								</div>
+								
+								<div class="box1">
+									<img  class="img-none" src="../img/01.jpg" alt=""/>
+									<span class="f14 corff">img-none:object-fit: none;</span>
+								</div>
+								<div class="box1">
+									<img  class="img-scale" src="../img/01.jpg" alt=""/>
+									<span class="f14 corff">img-scale:object-fit: scale-down;</span>
+								</div>
+							</div>
+							<div class="col-md-24 mt20">
+	                            <pre>
+	.img-fill { object-fit: fill; }
+	.img-contain { object-fit: contain; }
+	.img-cover { object-fit: cover; }
+	.img-none { object-fit: none; }
+	.img-scale { object-fit: scale-down; }                             	
+	</pre>
+	                        </div>
+	                         
+	                        <div class="col-md-24 mtb20" id="top-header">
+								<h1 class="f20 cor333 mtb30" id="img-col">
+									创意图片排列
+								</h1> 
+								<p class="f16">注意：创意图片只能以背景图片的形式插入，不可用img标签</p>
+							</div> 
+							<div class="col-md-24">	
+								<div class="wap-container"> 
+									<div class="ui-img-wrap">
+										<div class="ui-img-1" style="background-image:url(../img/01.jpg)"></div>
+									</div>
+									<div class="ui-img-wrap mtb20">
+										<div class="ui-img-2" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-2" style="background-image:url(../img/01.jpg)"></div>
+									</div>
+									
+									<div class="ui-img-wrap mtb20">
+										<div class="ui-img-2" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-2" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-2" style="background-image:url(../img/01.jpg)"></div>
+									</div>
+									<div class="ui-img-wrap mtb20">
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+									</div>
+									<div class="ui-img-wrap mtb20">
+										<div class="ui-img-31" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-32" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-32" style="background-image:url(../img/01.jpg)"></div> 
+									</div>
+									<div class="ui-img-wrap mtb20">
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-3" ></div>
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+									</div>
+									
+									<div class="ui-img-wrap mtb20">
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+									</div>
+									
+									<div class="ui-img-wrap mtb20">
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+									</div>
+									
+									<div class="ui-img-wrap mtb20">
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div>
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+										<div class="ui-img-3" style="background-image:url(../img/01.jpg)"></div> 
+									</div>
+								</div>
+							</div>
+							<div class="col-md-24 mt20">
+	                            <pre>
+	单个图片：ui-img-1 ，两个图片：ui-img-2 ，三个图片：ui-img-3 ，四张以上图片都用三列排法，可以留空跳格实现四格
+	&lt;div class="ui-img-wrap"&gt;
+	&lt;div class="ui-img-1" style="background-image:url(../img/01.jpg)"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	
+	不同数量排列方式不一样，展示效果也就不一样 ，例如：3张排列就有3中排列
+	3= 2+1 = 1+2 = 1+1+1
+	
+	特列就是这个3=2+1的排列，下面是复用代码
+	&lt;div class="ui-img-wrap mtb20"&gt;
+	&lt;div class="ui-img-31" style="background-image:url(../img/01.jpg)"&gt;&lt;/div&gt;
+	&lt;div class="ui-img-32" style="background-image:url(../img/01.jpg)"&gt;&lt;/div&gt;
+	&lt;div class="ui-img-32" style="background-image:url(../img/01.jpg)"&gt;&lt;/div&gt; 
+	&lt;/div&gt;
+	</pre>
+	
+	</div>
+	                        </div>
+					    <div class="wap">
+					    	<div class="wapbox">
+					    		<iframe src="image.html" width="100%" height="100%"></iframe>
+					    	</div>
+					    </div>
+					</div>
+				</div>
+				<div class="footer-height"><!--底部高度--></div>
+			</section>
+			
+			<section class="w300 left height100 bgee ptb20">
+				    <ul class="left-classA">
+						<h4><a href="fontsize.html">字体大小</a></h4> 
+					</ul>
+					<ul class="left-classA isopen">
+						<h4><a href="image.html">图片</a></h4>
+						<li><a href="image.html#img-z">正方形图片</a></li>
+						<li><a href="image.html#img-r">圆形图片</a></li>
+						<li><a href="image.html#img-auto">宽高自动图片</a></li>
+						<li><a href="image.html#img-col">创意图片排列</a></li>
+					</ul>
+				    <ul class="left-classA">
+						<h4><a href="button.html">按钮</a></h4>
+						<li><a href="button.html#button-button">button按钮</a></li>
+						<li><a href="button.html#button-a">a按钮</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="color.html">颜色</a></h4>
+						<li><a href="color.html#color-text">字体颜色Class命名</a></li>
+						<li><a href="color.html#color-bg">背景颜色Class命名</a></li>
+						<li><a href="color.html#color-bd">边框颜色Class命名</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="input.html">表单输入</a></h4>
+						<li><a href="input.html#input-input">input</a></li>
+						<li><a href="input.html#input-textarea">textarea</a></li>
+						<li><a href="input.html#input-select">select</a></li>
+						<li><a href="input.html#input-radio">radio</a></li>
+						<li><a href="input.html#input-checkbox">checkbox</a></li>
+						<li><a href="input.html#input-radio">radio</a></li>
+						<li><a href="input.html#input-checkbox">switch</a></li>
+						<li><a href="input.html#input-progress">progress</a></li>
+						<li><a href="input.html#input-table">table</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="layout.html">布局</a></h4>
+						<li><a href="layout.html#layout-24">24栅格</a></li>
+						<li><a href="layout.html#layout-10">横向等分</a></li>
+						<li><a href="layout.html#layout-width">无间距分割</a></li>
+						<li><a href="layout.html#layout-flex">flex弹性布局</a></li>
+					</ul>
+					
+	                 <ul class="left-classA">
+						<h4><a href="css3-animate.html">CSS3动画</a></h4>
+						<li><a href="css3-animate.html#css3-1">class动画</a></li>
+						<li><a href="css3-animate.html#css3-2">点击动画</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="feather.html">feather图标</a></h4>
+						<li><a href="feather.html#feather-icon">全部图标</a></li>
+						<li><a href="feather.html#feather-user">使用方式</a></li>
+					</ul> 
+					<ul class="left-classA">
+						<h4><a href="dialog.html">对话框/弹框</a></h4>
+					</ul> 
+					<ul class="left-classA">
+						<h4><a href="swiper.html">轮播插件</a></h4>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="px-rem.html">工具</a></h4>
+						<li><a href="px-rem.html">单位转换：PX-REM</a></li>
+						<li><a href="base64.html">图片转base64</a></li>
+						<li><a href="qrcode.html">二维码生成</a></li>
+					</ul>
+			</section>
+		</aside>
+		<article >
+	    	<a class="go-top animated slideInDown" href="#top-header"> 
+	    		<img src="../base/icons/arrow-up.svg" class="go-top-icon" onload="SVGInject(this)" />
+	    	</a>
+	    </article>
+	
+	</body>
+</html>

@@ -1,0 +1,25 @@
+/*进度条 css qui v1.1*/
+.progress {
+	width: 100%;
+	height: 8px;
+	border: none;
+	-webkit-appearance: none;
+}
+/*进度条背景色*/
+progress::-webkit-progress-bar{
+	background: #ededed;
+}
+/*进度条颜色*/
+progress::-webkit-progress-value{
+	background: #1890ff;
+}
+
+/*进度条圆角*/
+.progress-radius::-webkit-progress-bar {
+	border-radius: 30px;
+}
+
+/*兼容:ie/Open不支持,*/
+.progress-radius::-webkit-progress-value{
+	border-radius: 30px;
+}

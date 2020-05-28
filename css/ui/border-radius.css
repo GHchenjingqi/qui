@@ -1,0 +1,36 @@
+.bdr3 {
+	border-radius: 3px;
+}
+
+.bdr6 {
+	border-radius: 6px;
+}
+
+.bdr12 {
+	border-radius: 12px;
+}
+.bdr25 {
+	border-radius: 25px;
+}
+
+.bdr30 {
+	border-radius: 30px;
+}
+
+.bdr40 {
+	border-radius: 40px;
+}
+
+.bdr50 {
+	border-radius: 50%;
+}
+/*移动端*/
+.bdr-w-1 {
+	border-radius: 1vw;
+}
+.bdr-w-2 {
+	border-radius: 2vw;
+}
+.bdr-w-3 {
+	border-radius: 3vw;
+}

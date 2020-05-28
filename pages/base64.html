@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图片转base64——Qui工具</title>
+		<meta name="Keywords" content="px转rem"/>
+		<meta name="Description" content=""/>
+		<link rel="stylesheet" type="text/css" href="../css/ui.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/ui-layout.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../base/jquery/jquery-1.83.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/ui-svg.js" type="text/javascript" charset="utf-8"></script> 
+	</head>
+	<style type="text/css">  
+      .tool-base64 textarea{width: 100%;height: auto;margin-top: 25px;border: 1px solid #eee;border-radius: 6px;}
+      .upload{width: 100%;position: relative;border: 1px solid #eee;border-radius: 6px;height: auto;padding: 60px 0 20px 0; text-align: center;background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAEgklEQVRoQ+2aa4hWRRiAn1XXVde8u0qa7JokaVsmybpWULsa6ib7QwpBiFKIwNISheqHYMr+0MVLaBch+ytF0BK5JBvesDSvaIaRiJa7mpjkdb228TIc9nzfd8535pyZ+TbsDOyfPTPvvM+8M/Ne5ivq6Ojo4H/UilLg+9zaqYXvcwOTWji1sIMVaL0Ku8/AkfPwx2W4cB16doeKgeqvtgIeHQol3e1PXrAtff0OfHkctvwMF29Eg/TqAc+VwxtPwch+0f11ezgHvvuPgtx0EG7c0VWrs59YfvY4BV5aHH989ginwGevwLLtcPRPc0VH9YdV02DMIDNZzoBPXISl2+DcNTMF/aOH9FHQjw9LLtMJ8MlLsLBZXUa2W1kpfDgjuaUTA8vZPNAGLafgUrvCGjsEnhkFjXvg2AXbqJ3yKstgQ12yM50I+OA5WL4D2q66g8onuQh4qwpeeSL+/LGBxbWs3Qu378WfzOaI4X3h01kw4oF4UmMB/9SqLiLxqV3dxMpvV8PcyniaaAPfugcLt4Js5/9Ke6wMPqqDPjH8szaw+FK5ea/dNsft21PJMJXVvwQ+fhEeGayvkzbw1ydg5S59wWE9Pbci301dV3E3aJgKz5fr66UFfOUWfLATdpzWFxzUM9uH2vDXL42HVyfAsFI93fICy+X0yQH46hfzWzksYLABLaiSYIirqqkAudDCWijw6b9h8Xfw+2W9lcvXyw+7r7UzShLYqhFgC1pAqx+ClTXQryRYo0BgV7BNv8LmQ7CxTimz4FuYNxHqx9qDFrnjhsK66TCody50DrC4n/daYNcZu5YV2NV7lAvZXK9kz2tSKePSp+1DT3sYGmpzt3cOcPNvsHwnSKxs0vzb2IO9eVetuh9Y4nBJ9m1DS7VkRY060/6WASzh4qJm2N9mggphsCI1CFj+7wJ60oOwfoYqH3ktA1hqTfOb9EowYUuSDzYfsHwTxd6ZDOJqbFxkkj9/Vp8Zb2cA7z0LS7aBbL0kzQ8blmSEWdibzya07JrGF2DyyBALmwJ7t+P3p8Izqihgv6VrR8O7LXAoYfzuHFiUHdBL3bxh6aMOsActskyqJpHANhOEsCOhC5zkSGWPkSRFykH+GljGGRYX8fo3IIGHq1ZI4PIBsGlWZgCS44c37ofPD7vCDXdLLmZ87UlYMCmPH5ZPYt03t8J5i+VV/5SFsrCUgDbMBLFyaODhffjiOKz50TzaCrJaIYB7dIPF1fDy+FwNApMH+dHHlmOwfp99aNfAAruoCuZUBqeJefNhqTk3/mAWeWWvsUtgiayWTIGpo8NvhMiKh/fqJ0UAOdemP/mxDSw5sJxXeXCTkDTqwS0SOHut/mqHdoMyrQQSDbuV1PefVYlG0ta7GAYH5Lz55MUGTqqcN05eFCUPliZpos23Xx3dUmCdVTLpk1rY4s8ZdAyRbmmdVTLpk27pdEub7J/osekZjl4jsx7pGU7PsNkOihpd8DMsTzheJVISB8lfC9kKDlxIuKC5UuCutoDr+VMLu17hrpafWrirLeB6/n8BzKapaw2XaL0AAAAASUVORK5CYII=) no-repeat center  10px ;}
+	  .upload input[type=file]{position: absolute;z-index: 1;width: 100%;height: 100%;background: #0000FF;top: 0;left: 0;right: 0;opacity: 0;display: block;}
+	</style>
+	<body>
+		<header class="bgff border-bottom plr20">
+			<h1 class="logo left"><a href="/"><img src="../img/logo.png" alt="Qui-logo"/><span>Q-Ui</span></a></h1>
+		</header>
+		<aside >
+			<section class="ui-cton height100 bgff p20">
+				 <div class="container">
+					<div class="row">
+						<div class="pc">
+							<div class="col-md-24" id="top-header">
+								<h1 class="f20 cor333 mtb30" id="button-button">
+									图片转base64
+								</h1>
+							</div>
+							<div class="col-md-24 tool-base64">
+								<div class="upload">
+									<input type="file" hidden id="img_upload"/>
+									<p class="f18 cor33">点击上传</p>
+								</div> 
+						         <textarea id="base64_code" rows="15" ></textarea>
+						         <p id="img_area"></p>
+							</div> 
+						</div>
+						<div class="wap">
+					    	<div class="wapbox">
+					    		<iframe src="base64.html" width="100%" height="100%"></iframe>
+					    	</div>
+					    </div>
+						
+					</div>
+				</div>
+				<div class="footer-height"><!--底部高度--></div>
+			   
+			</section>
+			
+			<section class="w300 left height100 bgee ptb20">
+				    <ul class="left-classA">
+						<h4><a href="fontsize.html">字体大小</a></h4> 
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="image.html">图片</a></h4>
+						<li><a href="image.html#img-z">正方形图片</a></li>
+						<li><a href="image.html#img-r">圆形图片</a></li>
+						<li><a href="image.html#img-auto">宽高自动图片</a></li>
+						<li><a href="image.html#img-col">创意图片排列</a></li>
+					</ul>
+				    <ul class="left-classA">
+						<h4><a href="button.html">按钮</a></h4>
+						<li><a href="button.html#button-button">button按钮</a></li>
+						<li><a href="button.html#button-a">a按钮</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="color.html">颜色</a></h4>
+						<li><a href="color.html#color-text">字体颜色Class命名</a></li>
+						<li><a href="color.html#color-bg">背景颜色Class命名</a></li>
+						<li><a href="color.html#color-bd">边框颜色Class命名</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="input.html">表单输入</a></h4>
+						<li><a href="input.html#input-input">input</a></li>
+						<li><a href="input.html#input-textarea">textarea</a></li>
+						<li><a href="input.html#input-select">select</a></li>
+						<li><a href="input.html#input-radio">radio</a></li>
+						<li><a href="input.html#input-checkbox">checkbox</a></li>
+						<li><a href="input.html#input-radio">radio</a></li>
+						<li><a href="input.html#input-checkbox">switch</a></li>
+						<li><a href="input.html#input-progress">progress</a></li>
+						<li><a href="input.html#input-table">table</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="layout.html">布局</a></h4>
+						<li><a href="layout.html#layout-24">24栅格</a></li>
+						<li><a href="layout.html#layout-10">横向等分</a></li>
+						<li><a href="layout.html#layout-width">无间距分割</a></li>
+						<li><a href="layout.html#layout-flex">flex弹性布局</a></li>
+					</ul>
+					
+	                 <ul class="left-classA">
+						<h4><a href="css3-animate.html">CSS3动画</a></h4>
+						<li><a href="css3-animate.html#css3-1">class动画</a></li>
+						<li><a href="css3-animate.html#css3-2">点击动画</a></li>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="feather.html">feather图标</a></h4>
+						<li><a href="feather.html#feather-icon">全部图标</a></li>
+						<li><a href="feather.html#feather-user">使用方式</a></li>
+					</ul> 
+					<ul class="left-classA">
+						<h4><a href="dialog.html">对话框/弹框</a></h4>
+					</ul>
+					<ul class="left-classA">
+						<h4><a href="swiper.html">轮播插件</a></h4>
+					</ul>
+					<ul class="left-classA isopen">
+						<h4><a href="px-rem.html">工具</a></h4>
+						<li><a href="px-rem.html">单位转换：PX-REM</a></li>
+						<li><a href="base64.html">图片转base64</a></li>
+						<li><a href="qrcode.html">二维码生成</a></li>
+					</ul>
+			</section>
+		</aside>
+		<article >
+	    	<a class="go-top animated slideInDown" href="#top-header"> 
+	    		<img src="../base/icons/arrow-up.svg" class="go-top-icon" onload="SVGInject(this)" />
+	    	</a>
+	    </article>			
+							
+		 <script type="text/javascript">
+		        window.onload = function(){ 
+		        // 抓取上传图片，转换代码结果，显示图片的dom
+		        var img_upload=document.getElementById("img_upload");
+		        var base64_code=document.getElementById("base64_code");
+		        var img_area=document.getElementById("img_area");
+		        // 添加功能出发监听事件
+		        img_upload.addEventListener('change',readFile,false);}
+		        function readFile(){
+		            var file=this.files[0];
+		            if(!/image\/\w+/.test(file.type)){ 
+		                alert("请确保文件为图像类型"); 
+		                return false; 
+		            }
+		            var reader=new FileReader();
+		            reader.readAsDataURL(file);
+		            reader.onload=function(){
+		                base64_code.innerHTML = this.result; 
+		                img_area.innerHTML = '<div>图片img标签展示：</div><img src="'+this.result+'" alt=""/>'; 
+		            }
+		        }
+        </script>
+	</body>
+</html>

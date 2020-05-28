@@ -1,0 +1,6 @@
+base文件目前作为UI基础引入文件,建议用户根据需要引入：
+1.jquery，js插件：https://jquery.com/
+2.swiper，轮播图插件：https://www.swiper.com.cn/
+3.feather，SVG图标库：https://github.com/feathericons/feather 或 https://feathericons.com/
+4.animate.css,网址：https://daneden.github.io/animate.css/
+同时，你也可以根据需要引入自己喜欢用这习惯的插件

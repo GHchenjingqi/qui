@@ -1,0 +1,79 @@
+var corlist = [{
+	color: "00"
+}, {
+	color: "11"
+}, {
+	color: "33"
+}, {
+	color: "66"
+}, {
+	color: "678"
+}, {
+	color: "99"
+}, {
+	color: "f5"
+}, {
+	color: "dd "
+}, {
+	color: "ee "
+}, {
+	color: "Red "
+}, {
+	color: "Green "
+}, {
+	color: "Blue "
+}, {
+	color: "Yellow"
+}, {
+	color: "Pink"
+}, {
+	color: "ff"
+}, {
+	color: "Orange"
+}, {
+	color: "8A2"
+}, {
+	color: "7B6"
+}, {
+	color: "ff4"
+}, {
+	color: "ff7"
+}, {
+	color: "f4a"
+}, {
+	color: "f08"
+}, {
+	color: "ff8"
+}, {
+	color: "ee8"
+}, {
+	color: "b88"
+}, {
+	color: "daa"
+}, {
+	color: "ffd"
+}, {
+	color: "2e8"
+}, {
+	color: "66c"
+}, {
+	color: "98f"
+}, {
+	color: "008"
+}, {
+	color: "416"
+}, {
+	color: "0cd"
+}, {
+	color: "1e9"
+}, {
+	color: "0bf"
+}, {
+	color: "649"
+}, {
+	color: "080"
+}, {
+	color: "ced"
+}, {
+	color: "fa8"
+}]

@@ -1,0 +1,81 @@
+button {
+	background: 0;
+	border: 1px solid #ececec;
+	font-size: 14px;
+	cursor: pointer
+}
+button:hover {
+	color: #1890ff
+}
+.ui-btn {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-align: center;
+	line-height: 42px
+}
+.ui-btn-a {
+	border: 1px solid #ececec;
+	font-size: 14px;
+	color: #333;
+}
+.ui-btn-a:hover {
+	color: #1890ff
+}
+
+.ui-btn:hover {
+	color: #1890ff;
+}
+
+.ui-btn-line {
+	border: 1px solid #1890ff;
+	color: #1890ff
+}
+
+.ui-btn-line:hover {
+	background: #1890ff;
+	color: #fff
+}
+
+/*自定义button样式*/
+.ui-btn-blue {
+	background: #1890ff;
+	color: #fff
+}
+
+.ui-btn-blue:hover {
+	color: #fff;
+	background: #349dff
+}
+
+.ui-btn-gray {
+	background: #ececec;
+	color: #999
+}
+
+.ui-btn-gray:hover {
+	color: #999;
+	cursor: not-allowed
+}
+
+.ui-btn-red {
+	background: #ff4d4f;
+	color: #fff
+}
+
+.ui-btn-red:hover {
+	background: #e66062;
+	color: #fff
+}
+
+
+/*线性button 自定义*/
+.ui-btn-line-red {
+	border: 1px solid #ff4d4f;
+	color: #ff4d4f
+}
+.ui-btn-line-red:hover {
+	background: #ff4d4f;
+	color: #fff
+}
+
